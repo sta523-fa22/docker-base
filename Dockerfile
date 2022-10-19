@@ -17,7 +17,7 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.1.189/qua
     && rm quarto-1.1.189-linux-amd64.deb
 
 RUN install.r devtools rmarkdown quarto tidyverse gifski \
- && installGithub.r rundel/checklist rundel/parsermd
+ && installGithub.r rundel/checklist rundel/parsermd jl5000/barRacer
 
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/*
